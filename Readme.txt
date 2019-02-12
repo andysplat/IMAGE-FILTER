@@ -1,0 +1,3 @@
+Pentru rezolvarea temei am moduul de memorarea a unei imagini si functiile de citire si scriere de la tema 1.
+Pentru aplicarea unui filtru pe imagine am folosit cazul de la tema 1 cu Kernel-ul Gaussian, astfel am pus toate filtrele intr-un vector de matrici, si folosesc o functie ce, in functie de argumentul primit, intoarce indexul pentru matricea de filtrare respectiva.  
+Pentru scalabilitate am  pastarat aceeasi paralelizare pe linii, de la tema 1, in plus a trebuit sa recompun imaginea filtrata, dupa aplicarea fiecarui filtru, astfel am trimis la ranku-ul 0, liniile calculate de toate rankuri-le (mai putin rank-ul 0), in rank-ul 0 am recompus imaginea, iar apoi am trimis de la rank-ul 0, imaginea recompusa catre toate rankuri-le (mai putin rannk-ul 0). 
